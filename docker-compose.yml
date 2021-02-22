@@ -1,0 +1,10 @@
+version: "2"
+services:
+  pdf:
+    container_name: srie-pdf
+    image: anthonylau/url-to-pdf-api
+    environment:
+      ALLOW_HTTP: 'true'
+      NODE_ENV: development
+    ports:
+      - "9000:9000"
